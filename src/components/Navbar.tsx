@@ -16,7 +16,7 @@ export const Navbar: React.FC = () => {
             <span className="hidden sm:inline">Serving Clevedon, Portishead, Bristol & Surrounds</span>
           </div>
           <a href="tel:01275000000" className="flex items-center gap-1 hover:text-brand-accent transition-colors font-medium">
-            <Phone size={14} /> 01275 XXXXXX
+            <Phone size={14} /> 07786 653602
           </a>
         </div>
       </div>
@@ -31,8 +31,7 @@ export const Navbar: React.FC = () => {
             />
           </div>
           <div>
-            <span className="text-xl font-bold text-brand-navy block leading-none">Ace Bookkeeping</span>
-            <span className="text-xs text-brand-slate tracking-wide">Clevedon Ltd</span>
+            <span className="text-xl font-bold text-brand-navy block leading-none">Ace Bookkeeping LTD</span>
           </div>
         </Link>
 

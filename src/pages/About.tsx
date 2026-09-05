@@ -27,10 +27,8 @@ export const About: React.FC = () => {
                 <img 
                   src={selfie} 
                   alt="Andy - Ace Bookkeeping" 
-                  className="w-full h-80 object-cover rounded-xl mb-4"
+                  className="w-full h-80 object-cover rounded-xl"
                 />
-                <h3 className="font-bold text-brand-navy text-lg">Andy</h3>
-                <p className="text-xs text-brand-slate">Founder & Director, Ace Bookkeeping Ltd</p>
               </div>
             </div>
           </div>
@@ -94,7 +92,7 @@ export const About: React.FC = () => {
                 <img 
                   src={dog} 
                   alt="Bruce - Head of Public Relations" 
-                  className="w-full h-[380px] object-cover rounded-xl mb-3"
+                  className="w-full h-[380px] object-cover rounded-xl"
                 />
               </div>
             </div>
@@ -120,9 +118,15 @@ export const About: React.FC = () => {
             </div>
             <div>
               <h3 className="font-bold text-brand-navy mb-1">Building Long-Term Ties</h3>
-              <p className="text-sm text-brand-slate leading-relaxed">
-                Proudly supporting clients across Clevedon, Portishead, Nailsea, and throughout North Somerset with trusted, local advice.
+              <p className="text-sm text-brand-slate mb-3 leading-relaxed">
+                Proudly supporting clients across North Somerset and beyond, with trusted, local advice.
               </p>
+              <ul className="text-sm text-brand-slate space-y-1 font-medium">
+                <li>• Clevedon</li>
+                <li>• Portishead</li>
+                <li>• Nailsea</li>
+                <li>• Bristol and surrounding areas</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -132,7 +136,7 @@ export const About: React.FC = () => {
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">Looking for some help with your accounts or tax return?</h2>
           <p className="text-slate-300 mb-8 max-w-xl mx-auto">Get in touch for a friendly, no-obligation chat about how I can help your business or personal finances.</p>
           <Link to="/contact" className="inline-flex items-center gap-2 bg-brand-accent text-white px-8 py-4 rounded-xl font-medium hover:bg-teal-700 transition-all shadow-lg shadow-teal-900/20 hover:-translate-y-0.5">
-            <span>Get in Touch with Andy</span>
+            <span>Get in touch</span>
             <ArrowRight size={18} />
           </Link>
         </div>
