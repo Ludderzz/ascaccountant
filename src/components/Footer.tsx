@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
-        &copy; {new Date().getFullYear()} Ace Bookkeeping Ltd. All rights reserved. Registered in England and Wales.
+        &copy; {new Date().getFullYear()} Ace Bookkeeping Ltd | Registered in England & Wales Company No. 14847206 Registered Office: 20 Brookfield Walk, Clevedon, BS21 6YA
       </div>
     </footer>
   );
