@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Calculator, Menu, X, Phone, MapPin } from 'lucide-react';
+import { Menu, X, Phone, MapPin } from 'lucide-react';
+// @ts-ignore
+import logo from '../assets/logo.jpg';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,9 +22,13 @@ export const Navbar: React.FC = () => {
       </div>
       
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <div className="bg-brand-blue text-white p-2 rounded-lg">
-            <Calculator size={24} />
+        <Link to="/" className="flex items-center gap-3 group">
+          <div className="w-11 h-11 rounded-xl overflow-hidden border border-slate-200 shadow-sm flex-shrink-0 bg-white">
+            <img 
+              src={logo} 
+              alt="Ace Bookkeeping Logo" 
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
           </div>
           <div>
             <span className="text-xl font-bold text-brand-navy block leading-none">Ace Bookkeeping</span>

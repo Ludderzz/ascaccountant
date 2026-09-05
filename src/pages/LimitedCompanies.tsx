@@ -10,15 +10,15 @@ export const LimitedCompanies: React.FC = () => {
           <span className="text-brand-accent font-semibold tracking-wider uppercase text-xs">Specialist Support</span>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-2 mb-4">Accountancy for Limited Companies</h1>
           <p className="text-brand-slate text-lg">
-            Running a limited company in Clevedon, Portishead or Bristol? Get compliance, corporation tax handling, and annual filing managed professionally.
+            Running a limited company in Clevedon, Portishead, or North Somerset? Let’s keep your compliance simple, straightforward, and stress-free.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto mb-16 items-center">
           <div>
-            <h2 className="text-2xl font-bold text-brand-navy mb-4">Clear Compliance & Tax Planning</h2>
+            <h2 className="text-2xl font-bold text-brand-navy mb-4">Clear Compliance & Practical Guidance</h2>
             <p className="text-brand-slate mb-6 leading-relaxed">
-              As a small limited company director, you want to focus on growing your core business rather than wrestling with Companies House deadlines or HMRC forms. 
+              As a company director, your time is best spent growing your business—not wrestling with Companies House deadlines, Corporation Tax computations, or confusing financial jargon. 
             </p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-start gap-2 text-brand-navy font-medium">
@@ -45,19 +45,19 @@ export const LimitedCompanies: React.FC = () => {
             <ul className="space-y-4 text-brand-slate text-sm">
               <li className="border-b pb-3 border-slate-100">
                 <strong className="block text-brand-navy mb-1">Annual Statutory Accounts</strong>
-                Prepared in accordance with UK GAAP standards.
+                Prepared accurately and explained to you in plain English.
               </li>
               <li className="border-b pb-3 border-slate-100">
                 <strong className="block text-brand-navy mb-1">Corporation Tax Management</strong>
-                Calculating your exact liability and submitting via iXBRL.
+                Calculating your exact liability and handling submissions smoothly.
               </li>
               <li className="border-b pb-3 border-slate-100">
                 <strong className="block text-brand-navy mb-1">Director Salary & Dividends</strong>
-                Guidance on tax-efficient extraction structures.
+                Practical guidance on tax-efficient extraction structures tailored to you.
               </li>
               <li>
-                <strong className="block text-brand-navy mb-1">Ongoing Support</strong>
-                Direct access for routine queries throughout the financial year.
+                <strong className="block text-brand-navy mb-1">Direct, Personal Support</strong>
+                Talk directly to Andy whenever you have a routine query during the year.
               </li>
             </ul>
           </div>
