@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { MapPin, Award, HeartHandshake, CheckCircle2, ArrowRight } from 'lucide-react';
 // @ts-ignore
 import selfie from '../assets/selfie.png';
+// @ts-ignore
+import dog from '../assets/dog.jpg';
 
 export const About: React.FC = () => {
   return (
@@ -68,6 +70,33 @@ export const About: React.FC = () => {
                   <span>Bookkeeping & Payroll Clients</span>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Meet Bruce Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-5xl mx-auto items-center mb-20 bg-brand-light p-8 sm:p-12 rounded-2xl border border-slate-200">
+          <div className="lg:col-span-7 space-y-4 order-2 lg:order-1">
+            <span className="text-brand-accent font-semibold tracking-wider uppercase text-xs">Meet the Team</span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-brand-navy">Bruce</h2>
+            <p className="text-brand-accent font-medium text-sm">Head of Public Relations</p>
+            <p className="text-brand-slate leading-relaxed">
+              Specialising in client welcomes, tail wags and keeping the office relaxed.
+            </p>
+            <p className="text-brand-slate text-sm leading-relaxed">
+              While Andy handles the complex tax returns and accounts, Bruce makes sure everyone visiting or taking a call feels right at home with a friendly greeting and an exceptionally relaxed atmosphere.
+            </p>
+          </div>
+          <div className="lg:col-span-5 flex justify-center order-1 lg:order-2">
+            <div className="relative w-full max-w-sm">
+              <div className="absolute -inset-2 bg-brand-accent/15 rounded-2xl blur-lg"></div>
+              <div className="relative bg-white p-4 rounded-2xl border border-slate-200 shadow-sm text-center">
+                <img 
+                  src={dog} 
+                  alt="Bruce - Head of Public Relations" 
+                  className="w-full h-[380px] object-cover rounded-xl mb-3"
+                />
+              </div>
             </div>
           </div>
         </div>

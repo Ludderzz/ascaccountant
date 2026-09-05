@@ -1,126 +1,57 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CheckCircle2, ArrowRight, Building2, Users, FileSpreadsheet, Sparkles, MapPin, Coffee, HeartHandshake, Award } from 'lucide-react';
+import { ArrowRight, Building2, Users, FileSpreadsheet, Sparkles, MapPin, Award } from 'lucide-react';
 // @ts-ignore
 import logo from '../assets/logo.jpg';
+// @ts-ignore
+import selfie from '../assets/selfie.png';
 
 export const Home: React.FC = () => {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative bg-brand-navy text-white pt-24 pb-32 lg:pt-32 lg:pb-40">
+      <section className="relative bg-brand-navy text-white pt-20 pb-24 lg:pt-28 lg:pb-32">
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-brand-accent/15 blur-[140px] rounded-full pointer-events-none"></div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-7">
-            <div className="inline-flex items-center gap-2 bg-white/5 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-medium mb-6 border border-white/10 text-brand-light shadow-inner">
-              <Sparkles size={14} className="text-brand-accent animate-pulse" /> 
-              <span>No Call Centres. Just Direct, One-to-One Support.</span>
-            </div>
-            
-            <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-[1.15]">
-              Hi, I'm Andy. Straightforward accounting <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-200 via-teal-300 to-brand-accent">without the corporate jargon.</span>
-            </h1>
-            
-            <p className="text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl font-normal">
-              Providing friendly, practical accountancy and tax support to individuals, sole traders, and small businesses in Clevedon and the surrounding areas with over 20 years of experience.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
-              <Link to="/contact" className="group bg-brand-accent text-white font-medium px-8 py-4 rounded-xl hover:bg-teal-700 transition-all duration-300 text-center flex items-center justify-center gap-3 shadow-lg shadow-teal-900/20 hover:-translate-y-0.5">
-                <span>Book Your Free Chat with Andy</span> 
-                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link to="/services" className="bg-white/5 backdrop-blur-md text-white font-medium px-8 py-4 rounded-xl hover:bg-white/10 transition-all duration-300 text-center border border-white/10 hover:border-white/20">
-                Explore How I Can Help
-              </Link>
-            </div>
-
-            <div className="mt-10 pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6 text-slate-400 text-sm">
-              <div>
-                <span className="block text-2xl font-bold text-white mb-0.5">20+ Years</span>
-                <span>Accountancy Experience</span>
-              </div>
-              <div>
-                <span className="block text-2xl font-bold text-white mb-0.5">Direct</span>
-                <span>Talk Only To Me</span>
-              </div>
-              <div>
-                <span className="block text-2xl font-bold text-white mb-0.5">Local</span>
-                <span>Based in Clevedon</span>
-              </div>
-            </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <div className="inline-flex items-center gap-2 bg-white/5 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-medium mb-6 border border-white/10 text-brand-light shadow-inner">
+            <Sparkles size={14} className="text-brand-accent animate-pulse" /> 
+            <span>No Call Centres. Just Direct, One-to-One Support.</span>
           </div>
-
-          <div className="lg:col-span-5">
-            <div className="relative">
-              <img 
-                src={logo} 
-                alt="Ace Bookkeeping Clevedon Ltd Logo" 
-                className="absolute -top-20 -right-20 w-80 h-80 object-contain opacity-5 pointer-events-none" 
-                aria-hidden="true"
-              />
-              
-              <div className="absolute -inset-1 bg-gradient-to-r from-brand-accent to-teal-800 rounded-2xl blur-lg opacity-20"></div>
-              <div className="relative bg-slate-900/90 backdrop-blur-xl p-8 rounded-2xl border border-slate-800 shadow-2xl space-y-6">
-                <div className="flex items-center justify-between pb-4 border-b border-slate-800">
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 rounded-full bg-teal-500 animate-ping"></div>
-                    <span className="text-sm font-semibold text-white tracking-wide">Working With Me</span>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3 bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
-                    <Coffee className="text-brand-accent mt-0.5 flex-shrink-0" size={20} />
-                    <div>
-                      <strong className="block text-white text-sm mb-0.5">A Relaxed, Human Approach</strong>
-                      <span className="text-xs text-slate-400">No stuffy offices or intimidating terminology—just an open conversation about your accounts.</span>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3 bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
-                    <HeartHandshake className="text-brand-accent mt-0.5 flex-shrink-0" size={20} />
-                    <div>
-                      <strong className="block text-white text-sm mb-0.5">Consistency You Can Trust</strong>
-                      <span className="text-xs text-slate-400">Ace Bookkeeping is a small, personal practice. You deal directly with me from day one.</span>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3 bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
-                    <CheckCircle2 className="text-brand-accent mt-0.5 flex-shrink-0" size={20} />
-                    <div>
-                      <strong className="block text-white text-sm mb-0.5">More Than Just Figures</strong>
-                      <span className="text-xs text-slate-400">I take time to understand your individual circumstances, whether it's a tax return or growing company.</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Personal Statement / Intro Section */}
-      <section className="py-20 bg-white border-b border-slate-200/60">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 text-brand-accent font-semibold text-xs uppercase tracking-wider mb-3">
-            <Award size={16} /> Personal & Approachable Practice
-          </div>
-          <h2 className="text-3xl font-extrabold text-brand-navy mb-6">Why Clients Choose Ace Bookkeeping</h2>
-          <p className="text-brand-slate text-lg leading-relaxed mb-8">
-            Having worked in accountancy for more than two decades, I understand that dealing with tax and accounts can sometimes feel complicated or daunting. My aim is to make things as simple as possible, explaining everything clearly in plain English and providing reliable support without unnecessary jargon.
+          
+          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-[1.15]">
+            Hi, I'm Andy. <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-200 via-teal-300 to-brand-accent">Your local accountant in Clevedon.</span>
+          </h1>
+          
+          <p className="text-lg sm:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl mx-auto font-normal">
+            Straightforward, personal accountancy and tax support for individuals, sole traders and small businesses. With over 20 years’ experience, you’ll deal directly with me from start to finish.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 text-sm font-medium text-brand-navy">
-            <span className="bg-brand-light px-4 py-2 rounded-lg border border-slate-200">Self Assessment Tax Returns</span>
-            <span className="bg-brand-light px-4 py-2 rounded-lg border border-slate-200">Sole Trader Accounts</span>
-            <span className="bg-brand-light px-4 py-2 rounded-lg border border-slate-200">Limited Companies</span>
-            <span className="bg-brand-light px-4 py-2 rounded-lg border border-slate-200">Bookkeeping & Payroll</span>
+          
+          <div className="flex justify-center mb-12">
+            <Link to="/contact" className="group bg-brand-accent text-white font-medium px-8 py-4 rounded-xl hover:bg-teal-700 transition-all duration-300 text-center flex items-center justify-center gap-3 shadow-lg shadow-teal-900/20 hover:-translate-y-0.5">
+              <span>Get in touch with Andy</span> 
+              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+
+          <div className="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6 text-slate-400 text-sm max-w-2xl mx-auto">
+            <div>
+              <span className="block text-2xl font-bold text-white mb-0.5">20+ Years</span>
+              <span>Accountancy Experience</span>
+            </div>
+            <div>
+              <span className="block text-2xl font-bold text-white mb-0.5">Direct</span>
+              <span>Talk Only To Me</span>
+            </div>
+            <div>
+              <span className="block text-2xl font-bold text-white mb-0.5">Local</span>
+              <span>Based in Clevedon</span>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Core Services Bento Grid */}
+      {/* Core Services Bento Grid ("How I Can Help") */}
       <section className="py-24 bg-brand-light relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
@@ -169,6 +100,57 @@ export const Home: React.FC = () => {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* A Little About Me Section with Photo & Labrador */}
+      <section className="py-20 bg-white border-y border-slate-200/60">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center max-w-5xl mx-auto">
+            <div className="lg:col-span-5 flex justify-center">
+              <div className="relative w-full max-w-sm">
+                <div className="absolute -inset-2 bg-brand-accent/15 rounded-2xl blur-lg"></div>
+                <div className="relative bg-white p-4 rounded-2xl border border-slate-200 shadow-sm text-center">
+                  <img 
+                    src={selfie} 
+                    alt="Andy and his Labrador" 
+                    className="w-full h-80 object-cover rounded-xl mb-4"
+                  />
+                  <h3 className="font-bold text-brand-navy text-lg">Andy &amp; Family Companion</h3>
+                  <p className="text-xs text-brand-slate">Out for a walk around Clevedon</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-7 space-y-6">
+              <div className="inline-flex items-center gap-2 text-brand-accent font-semibold text-xs uppercase tracking-wider">
+                <Award size={16} /> A Little About Me
+              </div>
+              <h2 className="text-3xl font-extrabold text-brand-navy">Friendly, Local Support You Can Count On</h2>
+              <p className="text-brand-slate text-lg leading-relaxed">
+                When I'm not busy crunching numbers or helping local businesses file their returns, you’ll usually find me out walking my Labrador around Clevedon. I believe in keeping things down-to-earth, transparent, and approachable.
+              </p>
+              <p className="text-brand-slate leading-relaxed">
+                Working with a local accountant shouldn't feel formal or intimidating. Take a look at my full background or get in touch for a friendly chat.
+              </p>
+              <div className="pt-2">
+                <Link to="/about" className="inline-flex items-center gap-2 text-brand-accent font-semibold hover:text-teal-700 transition-colors">
+                  <span>Read more about my background</span>
+                  <ArrowRight size={16} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Ace Bookkeeping (Short Paragraph Section) */}
+      <section className="py-16 bg-brand-light">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl font-bold text-brand-navy mb-4">Why Choose Ace Bookkeeping?</h2>
+          <p className="text-brand-slate text-base leading-relaxed">
+            Dealing with tax and accounts doesn't have to be stressful. By offering clear guidance in plain English, flexible communication, and tailored advice for Self Assessment, sole trades, and limited companies, I make sure your finances stay in order all year round.
+          </p>
         </div>
       </section>
 
