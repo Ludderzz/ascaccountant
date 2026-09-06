@@ -28,7 +28,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     console.log(`Attempting to send email to Resend for: ${email}`);
 
     const data = await resend.emails.send({
-      from: 'Ace Bookkeeping Website <onboarding@resend.dev>',
+      from: 'Ace Bookkeeping Website <Request@acebookkeeping.uk>',
       to: 'andy@acebookkeeping.uk',
       subject: `New Website Enquiry from ${name}`,
       replyTo: email,
