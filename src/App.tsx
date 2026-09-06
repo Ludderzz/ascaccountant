@@ -8,6 +8,8 @@ import { Services } from './pages/Services';
 import { LimitedCompanies } from './pages/LimitedCompanies';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
+import { LocalLandingSection } from './components/LocalLandingSection';
+import { localSeoData } from './data/seoLocations';
 
 export function App() {
   return (
@@ -17,7 +19,18 @@ export function App() {
         <Navbar />
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route 
+              path="/" 
+              element={
+                <>
+                  <Home />
+                  {/* Maps through every location in your dataset to maximize local SEO keywords */}
+                  {localSeoData.map((location) => (
+                    <LocalLandingSection key={location.slug} location={location} />
+                  ))}
+                </>
+              } 
+            />
             <Route path="/services" element={<Services />} />
             <Route path="/limited-companies" element={<LimitedCompanies />} />
             <Route path="/about" element={<About />} />
