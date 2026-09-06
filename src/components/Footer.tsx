@@ -43,8 +43,8 @@ export const Footer: React.FC = () => {
           <h3 className="text-sm font-semibold uppercase tracking-wider text-brand-accent mb-4">Get in Touch</h3>
           <ul className="space-y-3 text-sm text-slate-300">
             <li className="flex items-center gap-2"><MapPin size={16} className="text-brand-accent flex-shrink-0" /> Clevedon, North Somerset</li>
-            <li className="flex items-center gap-2"><Phone size={16} className="text-brand-accent flex-shrink-0" /> 01275 XXXXXX</li>
-            <li className="flex items-center gap-2"><Mail size={16} className="text-brand-accent flex-shrink-0" /> andy@acebookkeeping.co.uk</li>
+            <li className="flex items-center gap-2"><Phone size={16} className="text-brand-accent flex-shrink-0" /> 01275 772255</li>
+            <li className="flex items-center gap-2"><Mail size={16} className="text-brand-accent flex-shrink-0" /> andy@acebookkeeping.uk</li>
           </ul>
         </div>
       </div>

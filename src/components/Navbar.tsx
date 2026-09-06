@@ -16,7 +16,7 @@ export const Navbar: React.FC = () => {
             <span className="hidden sm:inline">Serving Clevedon, Portishead, Bristol & Surrounds</span>
           </div>
           <a href="tel:01275000000" className="flex items-center gap-1 hover:text-brand-accent transition-colors font-medium">
-            <Phone size={14} /> 07786 653602
+            <Phone size={14} /> 01275 772255
           </a>
         </div>
       </div>
