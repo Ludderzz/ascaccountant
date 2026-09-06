@@ -19,7 +19,7 @@ export const LocalLandingSection: React.FC<Props> = ({ location }) => {
               {location.h1}
             </h2>
             <p className="text-brand-slate text-base leading-relaxed mb-6">
-              Running a business in {location.city} comes with unique local challenges. Whether you are operating near {location.localLandmarks.slice(0, 2).join(' or ')}, keeping your financial records accurate shouldn't pull you away from what you do best. Ace Bookkeeping provides hassle-free financial administration tailored for local sole traders, partnerships, and limited companies.
+              Running a business in {location.city} comes with unique local challenges. Whether you are operating near {location.localLandmarks[0] || location.city}, keeping your financial records accurate shouldn't pull you away from what you do best. Ace Bookkeeping provides hassle-free financial administration tailored for local sole traders, partnerships, and limited companies.
             </p>
             <ul className="space-y-3 mb-8">
               {[
@@ -45,7 +45,7 @@ export const LocalLandingSection: React.FC<Props> = ({ location }) => {
                 <div className="bg-brand-blue/10 text-brand-blue p-3 rounded-lg"><Award size={20} /></div>
                 <div>
                   <h4 className="font-bold text-brand-navy text-sm">Hyper-Local Expertise</h4>
-                  <p className="text-xs text-slate-500 mt-1">Deeply rooted in {location.county}, providing personal on-site or remote assistance whenever you need it.</p>
+                  <p className="text-xs text-slate-500 mt-1">Deeply rooted in {location.city}, providing personal on-site or remote assistance whenever you need it.</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -57,7 +57,7 @@ export const LocalLandingSection: React.FC<Props> = ({ location }) => {
               </div>
             </div>
             <div className="bg-slate-50 p-4 rounded-xl text-xs text-slate-600">
-              <strong>Areas covered nearby:</strong> {location.nearbyAreas.join(', ')} and all surrounding {location.county} districts.
+              <strong>Areas covered nearby:</strong> {location.nearbyAreas.join(', ')} and surrounding {location.county} districts.
             </div>
           </div>
         </div>

@@ -30,7 +30,7 @@ export const Home: React.FC = () => {
     {
       icon: <MapPin size={24} />,
       title: "Local & Accessible",
-      text: "Based in Clevedon and supporting individuals and small businesses across Clevedon and the surrounding area."
+      text: "Based in Clevedon and supporting individuals and small businesses across the local area."
     }
   ];
 
@@ -78,12 +78,12 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Core Services Section - Moved Up */}
+      {/* Core Services Section */}
       <section className="py-20 bg-brand-light relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-brand-accent font-semibold tracking-wider uppercase text-xs">How I Can Help</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-2 mb-4">Accountancy & Tax Services • Clevedon</h2>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-2 mb-4">Accountancy & Tax Services</h2>
             <p className="text-brand-slate text-lg">Whether you need help filing a straightforward tax return, sole trader accounts, or regular bookkeeping support, I'll keep things clear and organized.</p>
           </div>
 
@@ -182,7 +182,7 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Why Choose Ace Bookkeeping Section with Mobile Dropdown / Desktop Grid */}
+      {/* Why Choose Ace Bookkeeping Section */}
       <section className="py-20 bg-brand-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -201,7 +201,6 @@ export const Home: React.FC = () => {
                   key={index}
                   className="bg-white rounded-2xl border border-slate-200 shadow-sm flex flex-col overflow-hidden transition-all duration-300 md:justify-between"
                 >
-                  {/* Mobile Clickable Header / Desktop Static Header */}
                   <div 
                     onClick={() => toggleCard(index)}
                     className="p-6 cursor-pointer md:cursor-default flex items-center justify-between md:block"
@@ -212,20 +211,17 @@ export const Home: React.FC = () => {
                       </div>
                       <div className="flex items-center justify-between">
                         <h3 className="text-lg font-bold text-brand-navy">{card.title}</h3>
-                        {/* Mobile Dropdown Arrow */}
                         <ChevronDown 
                           size={20} 
                           className={`text-brand-accent transform transition-transform duration-300 md:hidden ${isOpen ? 'rotate-180' : ''}`} 
                         />
                       </div>
                     </div>
-                    {/* Desktop Content (Always Visible) */}
                     <p className="hidden md:block text-brand-slate text-sm leading-relaxed mt-2">
                       {card.text}
                     </p>
                   </div>
 
-                  {/* Mobile Expandable Content */}
                   <div className={`md:hidden px-6 transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-40 pb-6 opacity-100' : 'max-h-0 pb-0 opacity-0'}`}>
                     <p className="text-brand-slate text-sm leading-relaxed border-t border-slate-100 pt-4">
                       {card.text}
@@ -242,11 +238,11 @@ export const Home: React.FC = () => {
       <section className="py-20 bg-white border-t border-slate-200/80 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="inline-flex items-center gap-1.5 text-brand-accent font-semibold text-sm mb-3">
-            <MapPin size={16} /> Proudly Serving North Somerset
+            <MapPin size={16} /> Based in Clevedon
           </div>
-          <h2 className="text-3xl font-bold text-brand-navy mb-4">Based Right Here in Clevedon</h2>
+          <h2 className="text-3xl font-bold text-brand-navy mb-4">Ready to get your accounts sorted?</h2>
           <p className="text-brand-slate max-w-2xl mx-auto mb-8 text-lg">
-            Working locally means I’m always nearby when you need a chat. I proudly support individuals and businesses across Clevedon, Portishead, Nailsea, and the surrounding regions.
+            Working locally means I’m always nearby when you need a chat. Get in touch today for a friendly, no-obligation conversation.
           </p>
           <Link to="/contact" className="inline-flex items-center gap-2 bg-brand-navy text-white px-8 py-4 rounded-xl font-medium hover:bg-slate-800 transition-all shadow-md hover:-translate-y-0.5">
             <span>Get in touch</span>

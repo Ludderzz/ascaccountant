@@ -19,22 +19,18 @@ export function App() {
         <Navbar />
         <main className="flex-grow">
           <Routes>
-            <Route 
-              path="/" 
-              element={
-                <>
-                  <Home />
-                  {/* Maps through every location in your dataset to maximize local SEO keywords */}
-                  {localSeoData.map((location) => (
-                    <LocalLandingSection key={location.slug} location={location} />
-                  ))}
-                </>
-              } 
-            />
+            <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/limited-companies" element={<LimitedCompanies />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            {localSeoData.map((location) => (
+              <Route 
+                key={location.slug} 
+                path={`/locations/${location.slug}`} 
+                element={<LocalLandingSection location={location} />} 
+              />
+            ))}
           </Routes>
         </main>
         <Footer />
