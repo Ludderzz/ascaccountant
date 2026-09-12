@@ -54,11 +54,22 @@ export const Home: React.FC = () => {
             Straightforward, personal accountancy and tax support for individuals, sole traders and small businesses. With over 20 years’ experience, you’ll deal directly with me from start to finish.
           </p>
           
-          <div className="flex justify-center mb-10">
+          <div className="flex flex-wrap justify-center items-center gap-4 mb-10">
             <Link to="/contact" className="group bg-brand-accent text-white font-medium px-8 py-4 rounded-xl hover:bg-teal-700 transition-all duration-300 text-center flex items-center justify-center gap-3 shadow-lg shadow-teal-900/20 hover:-translate-y-0.5">
               <span>Get in touch</span> 
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </Link>
+            <a 
+              href="https://www.facebook.com/profile.php?id=61555026753812" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 text-slate-200 px-6 py-4 rounded-xl text-sm font-medium border border-white/10 transition-colors duration-300 group"
+            >
+              <svg className="w-4 h-4 fill-current text-brand-accent group-hover:text-white transition-colors" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+              <span>Follow on Facebook</span>
+            </a>
           </div>
 
           <div className="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6 text-slate-400 text-sm max-w-2xl mx-auto">
